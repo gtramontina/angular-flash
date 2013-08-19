@@ -67,3 +67,7 @@ Then, in your HTML, simply add the `<flash-messages>` element where you want you
 
 ## License
 This is licensed under the feel-free-to-do-whatever-you-want-to-do license.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gtramontina/angular-flash/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
