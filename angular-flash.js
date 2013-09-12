@@ -29,7 +29,8 @@ angular.module('flash', [])
     return text ? [{ level: level, text: text }] : [asMessage(level)];
   };
   
-  return function(level, text) {
+  return function(level, text, timeout) {
+    $timeout(function() { emit(cleanup); }, timeout);
     emit(messages = asArrayOfMessages(level, text));
   };
 })
