@@ -39,7 +39,7 @@ angular.module('flash', [])
   var directive = { restrict: 'E', replace: true };
   directive.template =
     '<ol id="flash-messages">' +
-      '<li ng-repeat="m in messages" class="{{m.level}}">{{m.text}}</li>' +
+      '<li ng-repeat="m in messages" class="{{m.level}}" ng-bind-html-unsafe="m.text"></li>' +
     '</ol>';
   
   directive.controller = function($scope, $rootScope) {
