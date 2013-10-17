@@ -29,9 +29,15 @@ angular.module('flash', [])
     return text ? [{ level: level, text: text }] : [asMessage(level)];
   };
 
-  return function(level, text) {
+  var flash = function(level, text) {
     emit(messages = asArrayOfMessages(level, text));
   };
+
+  ['error', 'warning', 'info', 'success'].forEach(function (level) {
+    flash[level] = function (text) { flash(level, text); };
+  });
+
+  return flash;
 }])
 
 .directive('flashMessages', [function() {
