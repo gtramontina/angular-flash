@@ -1,0 +1,12 @@
+{
+  "name": "angular-flash",
+  "version": "1.0.0",
+  "main": "angular-flash.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
