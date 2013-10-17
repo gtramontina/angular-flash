@@ -3,6 +3,8 @@
 Flash messages for Angular.js.
 
 Supports view changes, which means you can set a flash message, navigate to another view and your message will be displayed.
+## Install
+`bower install angular-flash-messages`
 
 ## Usage
 After adding `angular-flash.js` to your project, add `flash` as a dependency to your module. Here is a simple example:
