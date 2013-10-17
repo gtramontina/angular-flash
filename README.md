@@ -17,17 +17,20 @@ angular.module('myModule', ['flash'])
 });
 ```
 
-Then, in your HTML, simply add the `<flash-messages>` element where you want your messages to be displayed. It can be in your main template or individual partials.
+Then, in your HTML, simply add the `<flash:messages>` element where you want your messages to be displayed. It can be in your main template or individual partials.
 
 ```html
   <body ng-app="myModule">
-    <flash-messages></flash-messages>
-    
-    <article ng-controller="HomeController">
-      <h1>Home</h1>  
-    </article>
+    <flash:messages></flash:messages>
+
+    <main ng:controller="HomeController">
+      <h1>Home</h1>
+    </main>
   </body>
 ```
+
+### IE Support
+If you need IE8 support (or prefer), you can use the attribute directive: `<ol flash:messages></ol>`.
 
 ## Examples
 
