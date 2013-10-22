@@ -1,12 +1,12 @@
 {
-  "name": "angular-flash",
-  "version": "1.0.0",
-  "main": "angular-flash.js",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "name"           : "angular-flash",
+  "version"        : "1.0.0",
+  "description"    : "Angular.js Flash Messages",
+  "keywords"       : [ "angular", "js", "flash", "messages" ],
+  "author"         : "Guilherme J. Tramontina <guilherme.tramontina@gmail.com>",
+  "readmeFilename" : "README.md",
+  "dependencies"   : {
+    "angular"      : "PatternConsulting/bower-angular#unstable"
+  },
+  "ignore"         : [ "**/.*", "node_modules", "test" ]
 }

@@ -1,0 +1,23 @@
+{
+  "name"               : "angular-flash",
+  "version"            : "1.0.0",
+  "description"        : "Angular.js Flash Messages",
+  "repository"         : {
+    "type"             : "git",
+    "url"              : "https://github.com/gtramontina/angular-flash.git"
+  },
+  "scripts"            : {
+    "postinstall"      : "bower install",
+    "test"             : "karma start test/karma.conf.js --browsers Firefox --single-run"
+  },
+  "keywords"           : [ "angular", "js", "flash", "messages" ],
+  "author"             : "Guilherme J. Tramontina <guilherme.tramontina@gmail.com>",
+  "readmeFilename"     : "README.md",
+  "devDependencies"    : {
+    "st"               : "0.2",
+    "bower"            : "1.2",
+    "karma"            : "canary",
+    "karma-mocha"      : "0.1",
+    "karma-ng-scenario": "0.1"
+  }
+}

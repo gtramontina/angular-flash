@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="libs/angular.min.js"></script>
-    <script src="../angular-flash.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="components/angular/angular-route.js"></script>
+    <script src="angular-flash.js"></script>
     <script>
-      angular.module('flash.e2e', ['flash'])
+      angular.module('flash.e2e', ['flash', 'ngRoute'])
       .config(function($routeProvider) {
         $routeProvider
           .when('/',     { templateUrl: 'home' })
@@ -58,30 +59,30 @@
     </script>
   </head>
 
-  <body ng-app="flash.e2e">
+  <body ng:app="flash.e2e">
     <script type="text/ng-template" id="home">
-      <article ng-controller="HomeController" >
+      <article ng:controller="HomeController" >
         <h1>Home</h1>
-        <button id="goEdit" ng-click="goEdit()">Edit</button>
-        <button id="goEditSuccess" ng-click="goEditSuccess()">Edit (success)</button>
-        <button id="goEditMultipleSuccess" ng-click="goEditMultipleSuccess()">Edit (multiple success)</button>
-        <button id="goEditMultipleTypes" ng-click="goEditMultipleTypes()">Edit (multiple types)</button>
-        <button id="goEditFailure" ng-click="goEditFailure()">Edit (failure)</button>
-      </article>
-    </script>
-    
-    <script type="text/ng-template" id="edit">
-      <article ng-controller="EditController">
-        <h1>Edit</h1>
-        <button id="saveSuccess" ng-click="saveSuccess()">Save</button>
-        <button id="saveMultipleSuccess" ng-click="saveMultipleSuccess()">Save (multiple success)</button>
-        <button id="saveMultipleTypes" ng-click="saveMultipleTypes()">Save (multiple types)</button>
-        <button id="saveFailure" ng-click="saveFailure()">Save (failure)</button>
+        <button id="goEdit" ng:click="goEdit()">Edit</button>
+        <button id="goEditSuccess" ng:click="goEditSuccess()">Edit (success)</button>
+        <button id="goEditMultipleSuccess" ng:click="goEditMultipleSuccess()">Edit (multiple success)</button>
+        <button id="goEditMultipleTypes" ng:click="goEditMultipleTypes()">Edit (multiple types)</button>
+        <button id="goEditFailure" ng:click="goEditFailure()">Edit (failure)</button>
       </article>
     </script>
 
-    <flash-messages></flash-messages>
-    <article ng-view />
+    <script type="text/ng-template" id="edit">
+      <article ng:controller="EditController">
+        <h1>Edit</h1>
+        <button id="saveSuccess" ng:click="saveSuccess()">Save</button>
+        <button id="saveMultipleSuccess" ng:click="saveMultipleSuccess()">Save (multiple success)</button>
+        <button id="saveMultipleTypes" ng:click="saveMultipleTypes()">Save (multiple types)</button>
+        <button id="saveFailure" ng:click="saveFailure()">Save (failure)</button>
+      </article>
+    </script>
+
+    <flash:messages></flash:messages>
+    <article ng:view />
   </body>
 </html>
 
