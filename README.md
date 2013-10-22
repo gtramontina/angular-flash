@@ -1,4 +1,6 @@
 # angular-flash
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gtramontina/angular-flash/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Build Status](https://travis-ci.org/gtramontina/angular-flash.png?branch=master)](https://travis-ci.org/gtramontina/angular-flash)
 
 Flash messages for Angular.js.
 
@@ -72,7 +74,3 @@ If you need IE8 support (or prefer), you can use the attribute directive: `<ol f
 
 ## License
 This is licensed under the feel-free-to-do-whatever-you-want-to-do license.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gtramontina/angular-flash/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
