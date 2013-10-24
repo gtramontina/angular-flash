@@ -8,13 +8,15 @@
   },
   "scripts"            : {
     "postinstall"      : "bower install",
-    "test"             : "karma start test/karma.conf.js --browsers Firefox --single-run"
+    "test"             : "make test"
   },
   "keywords"           : [ "angular", "js", "flash", "messages" ],
   "author"             : "Guilherme J. Tramontina <guilherme.tramontina@gmail.com>",
   "readmeFilename"     : "README.md",
   "devDependencies"    : {
-    "st"               : "0.2",
+    "connect"          : "2.10",
+    "connect-route"    : "0.1",
+    "uglify-js"        : "2.4",
     "bower"            : "1.2",
     "karma"            : "canary",
     "karma-mocha"      : "0.1",
