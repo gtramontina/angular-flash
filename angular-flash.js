@@ -40,19 +40,18 @@ angular.module('flash', [])
   return flash;
 }])
 
-.directive('flashMessages', [function() {
-  var directive = { restrict: 'EA', replace: true };
-  directive.template =
-    '<ol id="flash-messages">' +
-      '<li ng-repeat="m in messages" class="{{m.level}}">{{m.text}}</li>' +
-    '</ol>';
-
-  directive.controller = function($scope, $rootScope) {
-    $rootScope.$on('flash:message', function(_, messages, done) {
-      $scope.messages = messages;
-      done();
-    });
-  };
-
-  return directive;
+.directive('flashMessages', ['flash', function (flash) {
+  return {
+    restrict: 'EA',
+    replace: true,
+    template: '<ol id="flash-messages">' +
+                '<li ng-repeat="m in messages" class="{{m.level}}">{{m.text}}</li>' +
+              '</ol>',
+    controller: ['$scope', '$rootScope', function($scope, $rootScope) {
+                  $rootScope.$on('flash:message', function(_, messages, done) {
+                    $scope.messages = messages;
+                    done();
+                  });
+                }]
+  }
 }]);
