@@ -2,7 +2,7 @@
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gtramontina/angular-flash/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Build Status](https://travis-ci.org/gtramontina/angular-flash.png?branch=master)](https://travis-ci.org/gtramontina/angular-flash)
 
-Flash messages for Angular.js.
+Flash messages for Angular.js. [Demo](http://embed.plnkr.co/y1INk36bPbW7GaX15QbQ/preview)
 
 Supports view changes, which means you can set a flash message, navigate to another view and your message will be displayed.
 ## Install
