@@ -29,7 +29,9 @@ angular.module('flash', [])
     return text ? [{ level: level, text: text }] : [asMessage(level)];
   };
 
-  var flash = function(level, text) {
+  var flash = function(level, text, timeout) {
+    if (timeout !== undefined)
+      $timeout(function() { emit(cleanup); }, timeout);
     emit(messages = asArrayOfMessages(level, text));
   };
 
