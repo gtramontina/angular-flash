@@ -6,7 +6,7 @@
   "author"         : "Guilherme J. Tramontina <guilherme.tramontina@gmail.com>",
   "readmeFilename" : "README.md",
   "dependencies"   : {
-    "angular"      : "PatternConsulting/bower-angular#unstable"
+    "angular"      : "1.2.0 - 1.3"
   },
   "ignore"         : [ "**/.*", "node_modules", "test" ]
 }
