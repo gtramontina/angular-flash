@@ -19,7 +19,7 @@
     "connect-route"           : "^0.1.4",
     "uglify-js"               : "^2.4.15",
     "bower"                   : "^1.3.12",
-    "karma"                   : "canary",
+    "karma"                   : "^0.12.28",
     "karma-mocha"             : "^0.1.9",
     "karma-ng-scenario"       : "^0.1.0",
     "karma-firefox-launcher"  : "*"
