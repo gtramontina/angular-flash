@@ -6,7 +6,9 @@
   "author"         : "Guilherme J. Tramontina <guilherme.tramontina@gmail.com>",
   "readmeFilename" : "README.md",
   "dependencies"   : {
-    "angular"      : "~1"
+    "angular"      : "~1",
+    "angular-mocks": "~1",
+    "angular-route": "~1"
   },
   "ignore"         : [ "**/.*", "node_modules", "test" ]
 }

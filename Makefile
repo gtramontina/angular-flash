@@ -1,4 +1,4 @@
-KARMA = ./node_modules/.bin/karma start test/karma.conf.js --browsers Firefox --single-run
+KARMA = ./node_modules/karma/bin/karma start test/karma.conf.js --browsers Firefox --single-run
 
 install:; @npm install
 
